@@ -1,0 +1,14 @@
+package com.gin.dao;
+
+import com.gin.model.Student;
+
+import java.sql.SQLException;
+import java.util.List;
+
+public interface IStudentDao {
+    public void insertStudent(Student student) throws SQLException;
+    public List<Student> selectAllStudent();
+    public Student longinStudent(String Email, String Pass);
+    public boolean updateStudent(Student student) throws SQLException;
+    public  Student selectStudent(String Name);
+}
